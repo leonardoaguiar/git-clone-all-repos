@@ -16,8 +16,6 @@
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-... 
-
 ## Descrição do projeto 
 
 <p align="justify">
@@ -34,9 +32,7 @@
 
 ## Deploy da Aplicação :dash:
 
-... 
-
-Baixe os arquivos CloneAllRepos.config e CloneAllRepos.ps1 na pasta onde deseja que os repositórios do Azure Repos fiquem.
+Baixe os arquivos ***CloneAllRepos.config*** e ***CloneAllRepos.ps1*** na pasta onde deseja que os repositórios do Azure Repos fiquem.
 
 ## Pré-requisitos
 
@@ -44,20 +40,18 @@ Baixe os arquivos CloneAllRepos.config e CloneAllRepos.ps1 na pasta onde deseja 
 
 :warning: [Powershell](https://docs.microsoft.com/pt-br/powershell/scripting/install/installing-powershell?view=powershell-7)
 
-...
-
 ## Como rodar a aplicação :arrow_forward:
 
-Abra o arquivo *CloneAllRepos.config* no seu editor de texto preferido e altere os parâmetros *URL*, *username* e *password*.
+Abra o arquivo ***CloneAllRepos.config*** no seu editor de texto preferido e altere os parâmetros ***URL***, ***username*** e ***password***.
 
-1. Na *URL* informe a URL do seu Team Project Azure Repos
-2. No *username*, informe o seu usuário para acessar o Azure DevOps
-3. Em *password*, informe sua senha de acesso ao Azure DevOps
+1. Na ***URL*** informe a URL do seu Team Project Azure Repos
+2. No ***username***, informe o seu usuário para acessar o Azure DevOps
+3. Em ***password***, informe sua senha de acesso ao Azure DevOps
 4. Salve e feche o arquivo
 
 No terminal, execute o script: 
 
-*Abra o seu terminal, com privilégios de administrador, na pasta onde estão os arquivos CloneAllRepos.config e CloneAllRepos.ps1*
+*Abra o seu terminal, com privilégios de administrador, na pasta onde estão os arquivos **CloneAllRepos.config** e **CloneAllRepos.ps1***
 ```
 powershell -ExecutionPolicy Bypass -File ./CloneAllRepos.ps1
 ```
