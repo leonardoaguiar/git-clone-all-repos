@@ -40,13 +40,30 @@ Baixe os arquivos ***CloneAllRepos.config*** e ***CloneAllRepos.ps1*** na pasta 
 
 :warning: [Powershell](https://docs.microsoft.com/pt-br/powershell/scripting/install/installing-powershell?view=powershell-7)
 
+## Autenticação
+
+**Autenticação com SSH**
+
+Você precisará configurar a autenticação com SSH aos repositórios Git do Azure DevOps.
+
+[Veja como usar autenticação SSH no Azure DevOps Repos](https://docs.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops)
+
+**Autenticação com PAT**
+
+Você precisará configurar um token PAT para realizar a autenticação ao Azure DevOps Repos e listar os repositórios.
+
+[Veja como usar PAT (Personal Access Token) no Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page)
+
+<br>
+
+> Você precisará tanto da autenticação com ***PAT*** quanto da autenticação com ***SSH***. A primeira (***PAT***) será utilizada para autenticar no ***Azure DevOps Repos*** e listar todos os repositórios do seu projeto. Já a segunda (***SSH***) será utilizada para autenticar no servidor ***Git*** e  fazer o `clone` ou `pull` em cada repositório listado.
+
 ## Como rodar a aplicação :arrow_forward:
 
-Abra o arquivo ***CloneAllRepos.config*** no seu editor de texto preferido e altere os parâmetros ***URL***, ***username*** e ***password***.
+Abra o arquivo ***CloneAllRepos.config*** no seu editor de texto preferido e altere os parâmetros ***URL*** e ***PAT***.
 
 1. Na ***URL*** informe a URL do seu Team Project Azure Repos
-2. No ***username***, informe o seu usuário para acessar o Azure DevOps
-3. Em ***password***, informe sua senha de acesso ao Azure DevOps
+3. Em ***PAT***, informe seu Personal Access Token criado no Azure DevOps
 4. Salve e feche o arquivo
 
 No terminal, execute o script: 
