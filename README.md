@@ -62,6 +62,8 @@ Você precisará configurar um token PAT para realizar a autenticação ao Azure
 
 ## Como rodar a aplicação :arrow_forward:
 
+### Com arquivo de configuração (CloneAllRepos.config + CloneAllRepos.ps1)
+
 Abra o arquivo ***CloneAllRepos.config*** no seu editor de texto preferido e altere os parâmetros ***URL*** e ***PAT***.
 
 1. Na ***URL*** informe a URL do seu Team Project Azure Repos
@@ -73,6 +75,15 @@ No terminal, execute o script:
 *Abra o seu terminal, com privilégios de administrador, na pasta onde estão os arquivos **CloneAllRepos.config** e **CloneAllRepos.ps1***
 ```
 powershell -ExecutionPolicy Bypass -File ./CloneAllRepos.ps1
+```
+
+### Sem arquivo de configuração, passando as credenciais por parâmetros (CloneAllReposParams.ps1)
+
+No terminal, execute o script: 
+
+*Abra o seu terminal, com privilégios de administrador, na pasta onde esta os arquivo **CloneAllReposParams.ps1*** e execute o comando abaixo preenchendo os parâmetros ***URL*** e ***PAT***.
+```
+powershell -ExecutionPolicy Bypass -File ./CloneAllReposParams.ps1 -URL {Your_DevOps_URL} -PAT {Your_PAT_Token}
 ```
 
 ## Licença 
